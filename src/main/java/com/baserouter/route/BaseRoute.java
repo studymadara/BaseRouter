@@ -13,9 +13,9 @@ public class BaseRoute
     @Autowired
     RestTemplate restTemplate;
 
-    @GetMapping("/adminPortal")
+    @GetMapping("/AdminPortal/home")
     public String getPortalInstance()
     {
-        return restTemplate.getForObject("http://baseRoute/adminPortal/home",String.class);
+        return restTemplate.getForObject("http://baseRoute/AdminPortal/home",String.class);
     }
 }
